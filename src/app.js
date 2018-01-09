@@ -49,4 +49,10 @@ for (let j = 0; j < dots.length; j++) {
 }
 
 
-document.getElementById('email-button').addEventListener('click', console.log("contact us!"));
+const contactBtn = document.getElementById('contact-button');
+const modal = document.getElementById('modal');
+
+contactBtn.addEventListener('click', function() {
+  console.log('open modal');
+  modal.style.display = 'block';
+});
