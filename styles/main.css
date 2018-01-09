@@ -71,3 +71,17 @@ button {
 }
 
 /* Add hero img overlay of 30% opacity */
+
+.banner {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  background-color: #1676DD;
+}
+
+.banner img {
+  width: 160px;
+  height: 45px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
