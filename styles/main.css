@@ -7,6 +7,12 @@ h1 {
   font-size: 35px
 }
 
+.hero-img-text {
+  font-weight: bold;
+  font-size: 48px;
+  color: white;
+}
+
 .section-header-bold {
   font-weight: bold;
   font-size: 28px;
@@ -45,3 +51,23 @@ p {
   font-size: 55px;
   letter-spacing: 2px;
 }
+
+button {
+  width: 215px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  background: linear-gradient(to right, #F36819, #F7931D);
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 2px;
+  box-shadow: -1px 1px 5px gray;
+}
+
+.envelope {
+  border-radius: 5px 0 0 5px;
+  box-shadow: -1px 1px 5px gray;
+}
+
+/* Add hero img overlay of 30% opacity */
