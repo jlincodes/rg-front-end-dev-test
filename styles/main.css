@@ -230,3 +230,21 @@ section div {
   margin: 10px 0 0 0;
   text-align: center;
 }
+
+/* Examples */
+.example {
+  margin-bottom: 50px;
+  justify-content: space-around;
+}
+
+.example div {
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 100px;
+  width: 450px;
+}
+
+.example img {
+  width: 705px;
+  height: 350px;
+}
