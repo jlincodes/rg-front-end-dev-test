@@ -67,7 +67,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = "import Home from '../index.html'\nimport Styles from '../styles/main.css'\n\nconsole.log(\"working\")\n"
+module.exports = "import Home from '../index.html';\nimport Styles from '../styles/main.css';\n\nfunction showSlide(n) {\n  let i;\n  const slides = document.getElementsByClassName('slide');\n  const dots = document.getElementsByClassName('dot');\n\n  if (n > slides.length) slideIndex = 1;\n  if (n < 1) slideIndex = slides.length;\n\n  for (i = 0; i < slides.length; i++) {\n    slides[i].style.display = 'none';\n  }\n\n  for (i = 0; i < dots.length; i++) {\n    dots[i].className = dots[i].className.replace(' active', '');\n  }\n\n  slides[slideIndex-1].style.display = 'block';\n  dots[slideIndex-1].className += ' active';\n}\n\nlet slideIndex = 1;\n\nshowSlide(slideIndex);\n\nfunction nextSlide() {\n  showSlide(slideIndex += 1);\n}\n\nfunction prevSlide() {\n  showSlide(slideIndex -= 1);\n}\n\nfunction currentSlide(n) {\n  showSlide(slideIndex = n);\n}\n\ndocument.getElementById('next').addEventListener('click', nextSlide);\ndocument.getElementById('prev').addEventListener('click', prevSlide);\nconst dots = document.getElementsByClassName('dot');\n\nfor (let j = 0; j < dots.length; j++) {\n  dots[j].addEventListener('click', function() {\n    currentSlide(j + 1);\n  });\n}\n"
 
 /***/ })
 /******/ ]);
