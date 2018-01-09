@@ -66,6 +66,10 @@ button {
   box-shadow: -1px 1px 5px gray;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 /* Add hero img overlay of 30% opacity */
 
 /* logo banner */
@@ -263,7 +267,7 @@ section div {
 /* Modal */
 
 .modal {
-  display: none;
+  display: block;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -272,4 +276,34 @@ section div {
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.4);
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form div {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  color: white;
+}
+
+input {
+  border-radius: 5px;
+  height: 24px;
+}
+
+textarea {
+  border-radius: 5px;
 }
