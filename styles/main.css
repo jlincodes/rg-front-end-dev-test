@@ -6,3 +6,42 @@ body {
 h1 {
   font-size: 35px
 }
+
+.section-header-bold {
+  font-weight: bold;
+  font-size: 28px;
+  color: #F36819;
+  text-transform: uppercase;
+}
+
+.section-header {
+  font-weight: normal;
+  font-size: 28px;
+  color: #283647;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 28px;
+  color: #F36819;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #F7931D;
+}
+
+p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.percentages {
+  font-weight: bold;
+  font-size: 55px;
+  letter-spacing: 2px;
+}
