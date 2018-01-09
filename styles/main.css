@@ -72,6 +72,8 @@ button {
 
 /* Add hero img overlay of 30% opacity */
 
+/* logo banner */
+
 .banner {
   display: flex;
   justify-content: center;
@@ -84,4 +86,72 @@ button {
   height: 45px;
   margin-top: 5px;
   margin-bottom: 10px;
+}
+
+/* Image slider */
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  z-index: 0;
+}
+
+.hero-img-text-container {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  z-index: 1;
+}
+
+.slider img {
+  width: 100%
+}
+
+/* Hide img by default */
+.slide {
+  display: none;
+}
+
+#prev, #next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+#next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#prev:hover, #next:hover {
+  background-color: rgba(0,0,0,0.8)
+}
+
+.dots-container {
+  position: relative;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background: white;
+  border: 1.5px solid #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
 }
