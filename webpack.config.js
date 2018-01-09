@@ -5,8 +5,8 @@ module.exports = {
 	entry: './src/app.js',
 
 	output: {
-		path: path.resolve(__dirname, 'dist'),
-		filename: 'app.js'
+		path: path.resolve(__dirname),
+		filename: 'bundle.js'
 	},
 
 	watch: true,
@@ -19,8 +19,12 @@ module.exports = {
 	module: {
 		loaders: [
       {
-        test: /\.html$/,
-        loader: "raw-loader"
+        test: [/\.html$/, /\.js?$/],
+				exclude: /(node_modules)/, // Leaves dependencies alone
+        loader: "raw-loader",
+				query: {
+					presets: ['es2015'] // Tells Babel what syntaxes to translate
+				}
       },
 			{
 				test: /\.(css)$/,
@@ -30,8 +34,15 @@ module.exports = {
 					loader: 'css-loader'
 				}, {
 					loader: 'sass-loader'
+				},
+				{
+					loader: 'babel-loader' // Sets Babel as the transpiler
 				}]
 			}
 		]
+	},
+	devtool: 'source-map',
+	resolve: {
+		extensions: ['.js', '*']
 	}
-}
+};
