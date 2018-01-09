@@ -5,7 +5,7 @@ function showSlide(n) {
   let i;
   const slides = document.getElementsByClassName('slide');
   const dots = document.getElementsByClassName('dot');
-  console.log(slides);
+
   if (n > slides.length) slideIndex = 1;
   if (n < 1) slideIndex = slides.length;
 
@@ -34,12 +34,10 @@ function prevSlide() {
 }
 
 function currentSlide(n) {
-  console.log('currentSlide!');
   showSlide(slideIndex = n);
 }
 
-// document.getElementById('next').addEventListener('click', nextSlide);
-document.getElementById('next').addEventListener('click', console.log('next'));
+document.getElementById('next').addEventListener('click', nextSlide);
 document.getElementById('prev').addEventListener('click', prevSlide);
 
 const dots = document.getElementsByClassName('dot');

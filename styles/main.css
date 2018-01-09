@@ -100,7 +100,7 @@ button {
 .hero-img-text-container {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 16%;
   z-index: 1;
 }
 
@@ -154,4 +154,30 @@ button {
 
 .active, .dot:hover {
   background-color: #717171;
+}
+
+section {
+  margin: 25px 0 0 0;
+}
+
+section div {
+  display: flex;
+  justify-content: center;
+}
+
+.pages-container {
+  margin-top: 50px;
+}
+
+.pages-col {
+  margin-left: 20px;
+}
+
+.page {
+  margin: 15px 0 15px 0;
+  width: 375px;
+}
+
+.page p {
+  margin-left: 30px;
 }
