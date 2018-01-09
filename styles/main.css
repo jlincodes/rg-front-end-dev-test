@@ -204,3 +204,29 @@ section div {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Stats */
+.desc {
+  width: 425px;
+}
+
+.stats-section button {
+  margin: 50px 100px 50px 75px;
+}
+
+.stats {
+  justify-content: space-around;
+  padding: 0 125px 0 125px;
+}
+
+.stat {
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat h4 {
+  color: #F7931D;
+  width: 160px;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
