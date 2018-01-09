@@ -47,3 +47,6 @@ for (let j = 0; j < dots.length; j++) {
     currentSlide(j + 1);
   });
 }
+
+
+document.getElementById('email-button').addEventListener('click', console.log("contact us!"));

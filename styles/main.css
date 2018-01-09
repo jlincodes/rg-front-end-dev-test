@@ -11,6 +11,7 @@ h1 {
   font-weight: bold;
   font-size: 48px;
   color: white;
+  margin-bottom: 15px;
 }
 
 .section-header-bold {
@@ -65,11 +66,6 @@ button {
   box-shadow: -1px 1px 5px gray;
 }
 
-.envelope {
-  border-radius: 5px 0 0 5px;
-  box-shadow: -1px 1px 5px gray;
-}
-
 /* Add hero img overlay of 30% opacity */
 
 /* logo banner */
@@ -99,9 +95,23 @@ button {
 
 .hero-img-text-container {
   position: absolute;
-  top: 50%;
+  top: 53%;
   left: 16%;
   z-index: 1;
+}
+
+.email-button {
+  width: 50px;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+  box-shadow: -1px 1px 5px gray;
+  position: absolute;
+  right: 0;
+  bottom: 20%; 
+}
+
+.email-button img {
+  width: 100%;
 }
 
 .slider img {
@@ -165,6 +175,7 @@ section div {
   justify-content: center;
 }
 
+/* Pages section */
 .pages-container {
   margin-top: 50px;
 }
