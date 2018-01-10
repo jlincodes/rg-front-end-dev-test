@@ -7,13 +7,6 @@ h1 {
   font-size: 35px
 }
 
-.hero-img-text {
-  font-weight: bold;
-  font-size: 48px;
-  color: white;
-  margin-bottom: 15px;
-}
-
 .section-header-bold {
   font-weight: bold;
   font-size: 28px;
@@ -104,14 +97,34 @@ button:hover {
   z-index: 1;
 }
 
+.hero-img-text {
+  font-weight: bold;
+  font-size: 48px;
+  color: white;
+  margin-bottom: 15px;
+}
+/*
+@media only screen and (min-width: 400px) {
+  .hero-img-te
+}
+
+@media only screen and (min-width: 800px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+} */
+
 .contact-button {
   width: 50px;
   height: 40px;
   border-radius: 5px 0 0 5px;
   box-shadow: -1px 1px 5px gray;
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 20%;
+  z-index: 2;
 }
 
 .contact-button img {
@@ -178,6 +191,11 @@ section div {
   display: flex;
   justify-content: center;
 }
+.section-header-container {
+  display: flex;
+  justify-content: center;
+  margin: 75px 0 30px 0;
+}
 
 /* Pages section */
 .pages-container {
@@ -230,45 +248,52 @@ section div {
 }
 
 .stats {
-  justify-content: space-around;
-  padding: 0 125px 0 125px;
+  /* justify-content: center; */
+  /* padding: 0 125px 0 125px; */
 }
 
 .stat {
+  /* margin: 0 100px 0 100px; */
   flex-direction: column;
   align-items: center;
+  /* width: 200px; */
+}
+
+.stat h1 {
+  text-align: center;
 }
 
 .stat h4 {
   color: #F7931D;
-  width: 160px;
+  width: 180px;
   margin: 10px 0 0 0;
   text-align: center;
 }
 
 /* Examples */
-.example {
-  margin-bottom: 50px;
-  justify-content: space-around;
+.example-text {
+  width: 475px;
+  margin: 50px;
+  /* justify-content: space-around; */
 }
 
 .example div {
-  flex-direction: column;
+  /* flex-direction: column;
   justify-content: space-around;
   margin: 0 100px;
-  width: 450px;
+  width: 450px; */
 }
 
 .example img {
-  width: 705px;
-  height: 350px;
+  max-width: 705px;
+  max-height: 350px;
 }
 
 /* Modal */
 
 .modal {
   display: block;
-  position: absolute;
+  position: fixed;
   left: 0px;
   top: 0px;
   z-index: 3;
@@ -279,31 +304,66 @@ section div {
 }
 
 .form-container {
-  display: flex;
-  justify-content: center;
-  width: 500px;
+  margin: 15% auto;
+  width: 400px;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 400px;
+  /* margin: 0 auto; */
+}
+
+form h3 {
+  text-align: center;
 }
 
 form div {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
-span {
+form input, textarea {
+  width: 100%;
+}
+
+form .form-row {
+  flex-direction: row;
+}
+
+label {
   color: white;
+  font-size: 16px;
 }
 
 input {
   border-radius: 5px;
   height: 24px;
+  font-size: 10px;
+  width: 20vw;
 }
 
 textarea {
   border-radius: 5px;
+}
+
+.form-button-continer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+/* additional styling for bootstrap */
+
+.col-md-6, .col-md-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  margin: 50px 0 50px 0;
+}
+
+body .container {
+  align-items: center;
 }
