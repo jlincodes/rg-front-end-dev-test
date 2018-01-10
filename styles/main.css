@@ -261,7 +261,7 @@ section div {
   position: relative;
   text-align: center;
   color: white;
-  /* min-width: 800px; */
+  width: 100%
 }
 
 .background-block img {
@@ -345,7 +345,7 @@ section div {
   text-align: center;
 }
 
-/* Examples */
+/* checkerboard grid */
 
 .checkerboard-grid img {
   max-width: 705px;
@@ -357,6 +357,10 @@ section div {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   grid-auto-rows: minmax(100px, auto)
+}
+
+.checkerboard-grid h2, h3 {
+  margin: auto;
 }
 
 .text-1 {
@@ -478,84 +482,57 @@ body .container {
   align-items: center;
 }
 
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 480px) {
+  /* Refactor and remove hero img text container */
   .hero-img-text-container {
     position: absolute;
-    top: 54%;
+    top: 53%;
     left: 15%;
     z-index: 1;
   }
-  .hero-img-text {
-    font-size: 30px;
+  .hero-img-text-container h1 {
+    font-size: 16px;
   }
-  .background-block h2 {
-    font-size: 18px;
-  }
-  /* .hero-btn-container {
-    display: flex;
-    justify-content: center;
+  /* Refactor and eliminate hero-btn container */
+  .hero-btn-container {
     position: absolute;
     bottom: 8%;
-    left: 24%
-  } */
-  .checkerboard-grid img {
-    max-width: 100%;
-    max-height: auto;
+    left: 30%;
   }
-  .checkerboard-grid {
+  /* affects .pages-continer, .desc-continer, stats-container, .checkerboard-grid */
+  .change-display {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+  }
+  .background-block {
+    /* might be unneccessary if width is default width: 100% */
+    /* width: 100%; */
+  }
+  .background-block h2 {
+    font-size: 14px;
+    /* Applies to min-w: 480 to max-w: 1200 */
+    width: 95%;
+  }
+  .section-header-container {
+    margin: 30px 0 0 0;
+  }
+  .checkerboard-grid div {
+    margin: 10px auto;
+  }
+}
+
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .hero-img-text {
+    font-size: 32px;
   }
   .hero-btn-container {
     display: flex;
     justify-content: center;
     position: absolute;
-    bottom: 8%;
-    left: 30%
-  }
-}
-
-
-@media only screen and (max-width: 480px) {
-  .hero-img-text {
-    font-size: 16px;
-  }
-  .background-block {
-    width: 100%;
-  }
-  .background-block h2 {
-    font-size: 14px;
-  }
-  .section-header-container {
-    margin: 50px 0 0 0;
-  }
-  .example-text {
-    margin: 0 25px;
-  }
-  .example-row {
-    margin: 10px 0 10px 0;
-  }
-  .form-row input {
-    width: 175px;
-  }
-  .checkerboard-grid img {
-    width: 100%;
-    height: auto;
-  }
-  .change-display {
-    display: block;
-  }
-  .text-1, .text-2 {
-    margin: 0 10px 0 10px;
-  }
-  .stats div, .desc-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    bottom: 15%;
+    left: 15%
   }
 }
 
@@ -570,7 +547,6 @@ body .container {
     margin-left: 30%;
   }
 }
-
 /* checkerboard image slide in effect */
 
 .slide-in {
