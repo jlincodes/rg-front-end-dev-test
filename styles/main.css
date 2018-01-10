@@ -129,7 +129,7 @@ button:hover {
 
 .hero-btn {
   position: absolute;
-  bottom: 18%;
+  bottom: 20%;
   left: 17.5%
 }
 
@@ -419,6 +419,7 @@ form {
 
 form h3 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 form div {
@@ -456,6 +457,10 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.email-input, .phone-input {
+  width: 175px;
 }
 
 .email-input {
@@ -577,6 +582,23 @@ body .container {
   }
   .desc {
     width: 425px;
+  }
+  .hero-btn {
+    position: absolute;
+    bottom: 18%;
+    left: 17.5%
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .checkerboard-grid img {
+    display: block;
+  }
+  .img-2 img {
+    float: right;
+  }
+  .text-1 {
+    margin-left: 30%;
   }
 }
 
