@@ -1,6 +1,7 @@
 import Home from '../index.html';
-import Styles from '../styles/main.css';
+// import Styles from '../styles/main.css';
 
+// image slider
 function showSlide(n) {
   let i;
   const slides = document.getElementsByClassName('slide');
@@ -48,6 +49,7 @@ for (let j = 0; j < dots.length; j++) {
   });
 }
 
+// Modal
 
 const contactBtn = document.getElementById('contact-button');
 const modal = document.getElementById('modal');
@@ -62,3 +64,5 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 };
+
+// Image slide in effect

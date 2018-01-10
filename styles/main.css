@@ -65,6 +65,7 @@ button:hover {
 
 /* Add hero img overlay of 30% opacity */
 
+
 /* logo banner */
 
 .banner {
@@ -90,10 +91,21 @@ button:hover {
   z-index: 0;
 }
 
+.slide img::before {
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #F36819, #000000);
+    opacity: .6;
+}
+
+
 .hero-img-text-container {
   position: absolute;
   top: 53%;
-  left: 16%;
+  left: 17.5%;
   z-index: 1;
 }
 
@@ -103,18 +115,12 @@ button:hover {
   color: white;
   margin-bottom: 15px;
 }
-/*
-@media only screen and (min-width: 400px) {
-  .hero-img-te
+
+.hero-btn-container {
+  position: absolute;
+  bottom: 20%;
+  left: 17.5%
 }
-
-@media only screen and (min-width: 800px) {
-
-}
-
-@media only screen and (min-width: 1200px) {
-
-} */
 
 .contact-button {
   width: 50px;
@@ -123,7 +129,7 @@ button:hover {
   box-shadow: -1px 1px 5px gray;
   position: fixed;
   right: 0;
-  bottom: 20%;
+  top: 45%;
   z-index: 2;
 }
 
@@ -199,20 +205,40 @@ section div {
 
 /* Pages section */
 .pages-container {
-  margin-top: 50px;
-}
-
-.pages-col {
-  margin-left: 20px;
+  /* margin-top: 50px; */
+  display: grid;
+  grid-template-columns: repeat(11, 2fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(100px, auto)
 }
 
 .page {
   margin: 15px 0 15px 0;
-  width: 375px;
+  width: 300px;
 }
 
 .page p {
   margin-left: 30px;
+}
+
+.pg-one {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.pg-two {
+  grid-column: 8;
+  grid-row: 1;
+}
+
+.pg-three {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.pg-four {
+  grid-column: 8;
+  grid-row: 2;
 }
 
 /* Background block */
@@ -221,7 +247,7 @@ section div {
   position: relative;
   text-align: center;
   color: white;
-  min-width: 800px;
+  /* min-width: 800px; */
 }
 
 .background-block img {
@@ -231,68 +257,130 @@ section div {
 .background-block h2 {
   color: white;
   font-weight: normal;
-  width: 875px;
+  width: 95%;
   position: absolute;
   top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 900px;
+}
+
+/* Description */
+
+.desc-container {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(100px, auto)
+}
+
+.desc {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.desc-button {
+  grid-column: 7;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.desc {
+  width: 425px;
 }
 
 /* Stats */
-.desc {
-  width: 425px;
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto)
+}
+
+.stat-1 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.stat-2 {
+  grid-column: 6;
+  grid-row: 1;
+}
+
+.stat-3 {
+  grid-column: 9;
+  grid-row: 1;
 }
 
 .stats-section button {
   margin: 50px 100px 50px 75px;
 }
 
-.stats {
-  /* justify-content: center; */
-  /* padding: 0 125px 0 125px; */
-}
-
-.stat {
-  /* margin: 0 100px 0 100px; */
-  flex-direction: column;
-  align-items: center;
-  /* width: 200px; */
-}
-
 .stat h1 {
   text-align: center;
+  margin-bottom: 0;
 }
 
 .stat h4 {
   color: #F7931D;
-  width: 180px;
+  width: 170px;
   margin: 10px 0 0 0;
   text-align: center;
 }
 
 /* Examples */
-.example-text {
-  width: 475px;
-  margin: 50px;
-  /* justify-content: space-around; */
-}
 
-.example div {
-  /* flex-direction: column;
-  justify-content: space-around;
-  margin: 0 100px;
-  width: 450px; */
-}
-
-.example img {
+.checkerboard-grid img {
   max-width: 705px;
   max-height: 350px;
 }
 
+.checkerboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  grid-auto-rows: minmax(100px, auto)
+}
+
+.text-1 {
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 15%;
+}
+
+.img-1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.img-2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.text-2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.text-1, .text-2 {
+  max-width: 450px;
+}
+
+.checkerboard-grid img {
+  max-width: 705px;
+  max-height: 350px;
+  width: 100%
+}
+
+
 /* Modal */
 
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   left: 0px;
   top: 0px;
@@ -332,26 +420,38 @@ form .form-row {
 
 label {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 input {
   border-radius: 5px;
-  height: 24px;
-  font-size: 10px;
+  height: 20px;
+  font-size: 14px;
   width: 20vw;
+  padding: 10px;
 }
 
 textarea {
   border-radius: 5px;
+  padding: 10px;
 }
 
-.form-button-continer {
+.form-button-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
+.email-input {
+  margin-right: 5px;
+}
+.phone-input {
+  margin-right: 10px;
+}
+
+.input-row {
+  margin: 10px;
+}
 
 /* additional styling for bootstrap */
 
@@ -360,10 +460,99 @@ textarea {
   justify-content: center;
 }
 
-.row {
-  margin: 50px 0 50px 0;
-}
-
 body .container {
   align-items: center;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .hero-img-text-container {
+    position: absolute;
+    top: 54%;
+    left: 15%;
+    z-index: 1;
+  }
+  .hero-img-text {
+    font-size: 30px;
+  }
+  .background-block h2 {
+    font-size: 18px;
+  }
+  /* .hero-btn-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 8%;
+    left: 24%
+  } */
+  .checkerboard-grid img {
+    max-width: 100%;
+    max-height: auto;
+  }
+  .checkerboard-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-btn-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 8%;
+    left: 30%
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .hero-img-text {
+    font-size: 16px;
+  }
+  .background-block {
+    width: 100%;
+  }
+  .background-block h2 {
+    font-size: 14px;
+  }
+  .section-header-container {
+    margin: 50px 0 0 0;
+  }
+  .example-text {
+    margin: 0 25px;
+  }
+  .example-row {
+    margin: 10px 0 10px 0;
+  }
+  .form-row input {
+    width: 175px;
+  }
+  .checkerboard-grid img {
+    width: 100%;
+    height: auto;
+  }
+  .change-display {
+    display: block;
+  }
+  .text-1, .text-2 {
+    margin: 0 10px 0 10px;
+  }
+  .stats div, .desc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .checkerboard-grid img {
+    display: block;
+  }
+  .img-2 img {
+    float: right;
+  }
+  .text-1 {
+    margin-left: 30%;
+  }
 }
