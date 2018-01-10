@@ -7,29 +7,34 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
+
     <!-- Logo banner -->
     <div class='banner'>
       <img src="docs/assets/igniter-logo-white.png" alt="logo">
     </div>
 
+    <button class="contact-button" id="contact-button" type="button" name="button">
+      <img src="docs/assets/envelope-icon.svg" alt="envelope-icon">
+    </button>
+
     <!-- Image slider -->
+
     <div>
       <div class="slider">
         <div class="hero-img-text-container">
           <h1 class='hero-img-text'>Lorem Ipsum Lorem Ipsum</h1>
-          <button type="button" name="button">Button</button>
         </div>
-        <button class="contact-button" id="contact-button" type="button" name="button">
-          <img src="docs/assets/envelope-icon.svg" alt="envelope-icon">
-        </button>
+        <div class="hero-btn-container">
+          <button class="hero-btn" type="button" name="button">Button</button>
+        </div>
         <div class="slide">
           <img src="docs/assets/hero-img.jpg" alt="hero-img1">
         </div>
         <div class="slide">
-          <img src="docs/assets/hero-img.jpg" alt="hero-img2">
+          <img src="docs/assets/hero-img-flipped.jpeg" alt="hero-img-flipped">
         </div>
         <div class="slide">
-          <img src="docs/assets/hero-img.jpg" alt="hero-img3">
+          <img src="docs/assets/hero-img-flipped-2.jpg" alt="hero-img-flipped-2">
         </div>
         <a id="prev">&#10094;</a>
         <a id="next">&#10095;</a>
@@ -44,27 +49,23 @@
 
     <!-- pages -->
 
-    <section class="pages-container">
-      <div class="pages-col">
-        <div class="page">
+    <section class="pages-container change-display">
+        <div class="page pg-one">
           <img src="docs/assets/page-icon.svg" alt="page">
           <p>Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus cursus.</p>
         </div>
-        <div class="page">
+        <div class="page pg-two">
           <img src="docs/assets/page-icon.svg" alt="page">
           <p>Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus cursus.</p>
         </div>
-      </div>
-      <div class="pages-col">
-        <div class="page">
+        <div class="page pg-three">
           <img src="docs/assets/page-icon.svg" alt="page">
           <p>Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus cursus.</p>
         </div>
-        <div class="page">
+        <div class="page pg-four">
           <img src="docs/assets/page-icon.svg" alt="page">
           <p>Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus cursus.</p>
         </div>
-      </div>
     </section>
 
     <!-- background block -->
@@ -74,79 +75,111 @@
       <h2>Lorem ipsum dolo sit amet, ac dis arcu libero, pulvinar vitae lectus cursus. Purus libero amet, at dui, tincidunt nunc vestibulum in justo, a faucibus ipsum hendrerit semper ipsum ac.</h2>
     </section>
 
-    <!-- Stats section -->
 
-    <section class="stats-section">
-      <div>
-        <h1 class="section-header-bold">Lorem</h1>&nbsp;<h1 class="section-header">ipsum</h1>
-      </div>
+    <div class="section-header-container">
+      <h1 class="section-header-bold">Lorem</h1>&nbsp;
+      <h1 class="section-header">ipsum</h1>
+    </div>
 
-      <div>
-        <p class='desc'>
+    <div class="desc-container change-display">
+        <p class="desc">
           Loren ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitiation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
+      <div class="desc-button">
         <button type="button" name="button">Button</button>
       </div>
+    </div>
 
-        <div class="stats">
-          <div class="stat">
+    <!-- Stats section -->
+
+    <div class="stats change-display">
+
+        <div class="stat stat-1">
+          <!-- <div class="stat"> -->
             <h1 class="percentages">240&#37;</h1>
-            <h4 class="stat-desc">Lorem ipsum dolor sit amet Lorem ipsum dolor ipsum dolor</h4>
-          </div>
-          <div class="stat">
+            <h4>Lorem ipsum dolor sit amet Lorem ipsum dolor ipsum dolor</h4>
+          <!-- </div> -->
+        </div>
+        <div class="stat stat-2">
+          <!-- <div class="stat"> -->
             <h1 class="percentages">105&#37;</h1>
             <h4 class="stat-desc">Lorem ipsum dolor sit amet Lorem ipsum dolor ipsum dolor</h4>
-          </div>
-          <div class="stat">
+          <!-- </div> -->
+        </div>
+        <div class="stat stat-3">
+          <!-- <div class="stat"> -->
             <h1 class="percentages">159&#37;</h1>
             <h4 class="stat-desc">Lorem ipsum dolor sit amet Lorem ipsum dolor ipsum dolor</h4>
-          </div>
+          <!-- </div> -->
         </div>
-    </section>
+
+    </div>
 
     <!-- Examples -->
 
-    <section class="examples-section">
-      <div>
-        <h1 class="section-header-bold">Lorem</h1>&nbsp;<h1 class="section-header">ipsum</h1>
+    <div class="section-header-container">
+      <h1 class="section-header-bold">Lorem</h1>&nbsp;
+      <h1 class="section-header">ipsum</h1>
+    </div>
+
+    <div class="checkerboard-grid change-display">
+
+      <div class="text-1">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <h3>Lorem ipsum dolor sit amet lorem</h3>
+        <p>
+          Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus cursus. Purus libero amet, at dui, tincidunt nunc vestibulum in justo, a faucibus ipsum hendrerit semper ipsum. Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus cursus. Purus libero amet, at dui, tincidunt nunc vestibulum in justo, a faucibus ipsum hendrerit semper ipsum ac.
+        </p>
       </div>
-      <div class="example">
-        <div class="example-text">
-          <h2>Lorem ipsum dolor sit amet</h2>
-          <h3>Lorem ipsum dolor sit amet lorem</h3>
-          <p>
-            Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus cursus. Purus libero amet, at dui, tincidunt nunc vestibulum in justo, a faucibus ipsum hendrerit semper ipsum. Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus cursus. Purus libero amet, at dui, tincidunt nunc vestibulum in justo, a faucibus ipsum hendrerit semper ipsum ac.
-          </p>
-        </div>
-        <img src="docs/assets/img1.jpg" alt="img1">
+
+      <div class="img-1">
+        <img class="align-right slide-in" src="docs/assets/img1.jpg" alt="img1">
       </div>
-      <div class="example">
-        <img src="docs/assets/img2.jpg" alt="img2">
-        <div class="example-text">
-          <h2>Lorem ipsum dolor sit amet</h2>
-          <h3>Lorem ipsum dolor sit amet lorem</h3>
-          <p>
-            Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus cursus. Purus libero amet, at dui, tincidunt nunc vestibulum in justo, a faucibus ipsum hendrerit semper ipsum. Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus cursus. Purus libero amet, at dui, tincidunt nunc vestibulum in justo, a faucibus ipsum hendrerit semper ipsum ac.
-          </p>
-        </div>
+
+      <div class="img-2">
+        <img class="align-left slide-in" src="docs/assets/img2.jpg" alt="img2">
       </div>
-    </section>
+
+      <div class="text-2">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <h3>Lorem ipsum dolor sit amet lorem</h3>
+        <p>
+          Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus cursus. Purus libero amet, at dui, tincidunt nunc vestibulum in justo, a faucibus ipsum hendrerit semper ipsum. Lorem ipsum dolor sit amet, ac dis arcu libero, pulvinar vitae lectus cursus. Purus libero amet, at dui, tincidunt nunc vestibulum in justo, a faucibus ipsum hendrerit semper ipsum ac.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Modal form -->
 
     <div id="modal" class="modal">
       <div class="form-container">
         <form class="form" action="index.html" method="post">
-          <span>Your Name</span>
-          <input type="text" name="name" value="">
+          <h3>lorem ipsum</h3>
 
-            <span>Your Email</span>
-            <input type="text" name="email" value="">
-            <span>Phone Number</span>
-            <input type="text" name="phone" value="">
+          <div class="input-row">
+            <label>Your Name
+            </label>
+            <input type="text">
+          </div>
 
-          <span>Message</span>
-          <textarea name="message" rows="8" cols="80"></textarea>
+          <div class="input-row form-row">
+              <label>Your Email
+                <input class="email-input" type="text">
+              </label>
+              <label>Phone Number
+                <input class="phone-input" type="text">
+              </label>
+          </div>
 
-          <div>
+          <div class="input-row">
+            <label>Message
+              <textarea name="message" rows="4" cols="50"></textarea>
+            </label>
+          </div>
+
+
+          <div class="input-row form-button-container">
             <button type="button" name="button">Button</button>
           </div>
 
@@ -154,6 +187,8 @@
       </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="bundle.js"></script>
   </body>
 </html>
