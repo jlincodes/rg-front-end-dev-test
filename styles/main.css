@@ -77,9 +77,6 @@ button:hover {
     transform: translateX(-3px);
 }
 
-/* Add hero img overlay of 30% opacity */
-
-
 /* logo banner */
 
 .banner {
@@ -152,7 +149,7 @@ button:hover {
   width: 100%
 }
 
-/* Hide img by default */
+/* Hides img by default */
 .slide {
   display: none;
 }
@@ -216,7 +213,6 @@ section div {
 
 /* Pages section */
 .pages-container {
-  /* margin-top: 50px; */
   display: grid;
   grid-template-columns: repeat(11, 2fr);
   grid-gap: 5px;
@@ -401,9 +397,6 @@ section div {
   width: 100%
 }
 
-
-
-
 /* Modal */
 
 .modal {
@@ -425,7 +418,6 @@ section div {
 
 form {
   width: 400px;
-  /* margin: 0 auto; */
 }
 
 form h3 {
@@ -485,16 +477,7 @@ textarea {
   margin: 10px;
 }
 
-/* additional styling for bootstrap */
-
-.col-md-6, .col-md-4 {
-  display: flex;
-  justify-content: center;
-}
-
-body .container {
-  align-items: center;
-}
+/* media queries for responsiveness */
 
 @media only screen and (max-width: 480px) {
   .hero-img-text {
@@ -509,29 +492,14 @@ body .container {
     bottom: 8%;
     left: 30%;
   }
-  /* affects .pages-continer, .desc-continer, stats-container, .checkerboard-grid */
-  /* .change-display {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
-  .background-block h2 {
-    /* font-size: 14px; */
-    /* Applies to min-w: 480 to max-w: 1200 */
-    /* width: 95%; */
-  }
   .section-header-container {
     margin: 30px 0 0 0;
   }
-  /* .checkerboard-grid div {
-    margin: 10px auto;
-  } */
 }
 
 @media only screen and (max-width: 800px) {
   .background-block h2 {
     font-size: 14px;
-    /* Applies to max-w: 800 */
     width: 95%;
   }
   /* affects .pages-continer, .desc-continer, stats-container, .checkerboard-grid */
@@ -559,7 +527,6 @@ body .container {
   .hero-btn {
     position: absolute;
     bottom: 8%;
-    /* left: 30%; */
   }
 }
 
